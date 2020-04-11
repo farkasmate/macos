@@ -1,0 +1,17 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+brew "bash-completion"
+brew "git"
+brew "htop"
+brew "watch"
+
+cask "android-studio"
+cask "google-chrome"
+cask "iterm2"
+cask "keepassxc"
+cask "openconnect-gui"
+cask "virtualbox"
+cask "virtualbox-extension-pack"
+cask "vlc"
