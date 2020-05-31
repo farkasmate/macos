@@ -11,6 +11,7 @@ brew "wget"
 
 cask "android-studio"
 cask "google-chrome"
+cask "hyper"
 cask "iterm2"
 cask "keepassxc"
 cask "openconnect-gui"
