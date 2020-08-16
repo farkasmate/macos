@@ -2,13 +2,22 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "38450939dcc5a7bd5c139464fb35b5939c406221"
+        "revision": "2e75b89fde37b586ddc8ed1c87df21533a50a50e"
       },
       "homebrew/cask": {
-        "revision": "8cca8f163f9b53573c1c8047df87c0f2d88f4d75"
+        "revision": "334764e0d9d67dc2cf0ab855a7bf3a758bec70e2"
       },
       "homebrew/core": {
-        "revision": "0836702bb2c414a5af2b55803cff9eeddeb0c92b"
+        "revision": "5f9cffaf24adf678ae6d76c1b3389e9f85e474f6"
+      },
+      "beeftornado/rmtree": {
+        "revision": "5eed35274437b8c52be1e627d97ad7d46965f164"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "3d38a77692471d259b4cf78e763bdf604561f6c8"
+      },
+      "homebrew/cask-versions": {
+        "revision": "bde26dd00d02a4d0d4e61e1d655d143ac3d7e199"
       }
     },
     "brew": {
@@ -92,22 +101,22 @@
         }
       },
       "git": {
-        "version": "2.27.0",
+        "version": "2.28.0",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.27.0.catalina.bottle.tar.gz",
-              "sha256": "5bfe46796926e48d2d78ee87e93195c0a36f7c70d9aa4ff8ab77277a6582441a"
+              "url": "https://homebrew.bintray.com/bottles/git-2.28.0.catalina.bottle.tar.gz",
+              "sha256": "6c4d10f29f78dcbefa12fab3e47e7755d5d2ca2e9bbc5aeee4838ad223296d0a"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.27.0.mojave.bottle.tar.gz",
-              "sha256": "dffad4b938672dda3aef783f88cf38d67923f8f8e68df77b198476816fd37d4f"
+              "url": "https://homebrew.bintray.com/bottles/git-2.28.0.mojave.bottle.tar.gz",
+              "sha256": "10f23bc63568fdeb598df2dd30fbb0ead31f2eef3c0990a8ac53f3e2005de82f"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.27.0.high_sierra.bottle.tar.gz",
-              "sha256": "c9f1d9ac100e43a2e6f1df9785d98119d08bf144d862fb541c1212ccfb700041"
+              "url": "https://homebrew.bintray.com/bottles/git-2.28.0.high_sierra.bottle.tar.gz",
+              "sha256": "5095b064dfafb8cf4cabd017844f181d8eabaf45fb6965d2d30ed6de00c0e884"
             }
           }
         }
@@ -153,6 +162,31 @@
             }
           }
         }
+      },
+      "whalebrew": {
+        "version": "0.2.3",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/whalebrew-0.2.3.catalina.bottle.tar.gz",
+              "sha256": "3243317cffe305c9c21a458793f4319b9784e979cf3225663df3e83b53e1736f"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/whalebrew-0.2.3.mojave.bottle.tar.gz",
+              "sha256": "9abfd2e5951f589dde2cc9847b44e77741785a8b9ff5208c958bd8233def74b8"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/whalebrew-0.2.3.high_sierra.bottle.tar.gz",
+              "sha256": "66e059ff26ef8e1a7d15416bf0b3a946716e03e60cf7f1281e572dcd78b1f4d8"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/whalebrew-0.2.3.sierra.bottle.tar.gz",
+              "sha256": "a6357b16b2285d65c523902fa90180f3b6e77b08196cf6edce3f32b38202ff54"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -175,7 +209,7 @@
         }
       },
       "keepassxc": {
-        "version": "2.5.4",
+        "version": "2.6.0",
         "options": {
           "full_name": "keepassxc"
         }
@@ -187,7 +221,7 @@
         }
       },
       "virtualbox": {
-        "version": "6.1.10,138449",
+        "version": "6.1.12,139181",
         "options": {
           "full_name": "virtualbox"
         }
@@ -223,9 +257,21 @@
         }
       },
       "virtualbox-extension-pack": {
-        "version": "6.1.10",
+        "version": "6.1.12",
         "options": {
           "full_name": "virtualbox-extension-pack"
+        }
+      },
+      "aws-vault": {
+        "version": "5.4.4",
+        "options": {
+          "full_name": "aws-vault"
+        }
+      },
+      "sweet-home3d": {
+        "version": "6.4.2",
+        "options": {
+          "full_name": "sweet-home3d"
         }
       }
     }
@@ -233,9 +279,9 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.4.2",
+        "HOMEBREW_VERSION": "2.4.11",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "0836702bb2c414a5af2b55803cff9eeddeb0c92b",
+        "Homebrew/homebrew-core": "5f9cffaf24adf678ae6d76c1b3389e9f85e474f6",
         "CLT": "11.0.33.16",
         "Xcode": "11.5",
         "macOS": "10.15.5"
