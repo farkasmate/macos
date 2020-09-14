@@ -2,46 +2,42 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "2e75b89fde37b586ddc8ed1c87df21533a50a50e"
+        "revision": "b84d4569eafe799c7c46c6c12c63215cb8095b6d"
       },
       "homebrew/cask": {
-        "revision": "334764e0d9d67dc2cf0ab855a7bf3a758bec70e2"
+        "revision": "ff8e642fbb760248985c1e4d069cd157f2cb07cd"
       },
       "homebrew/core": {
-        "revision": "5f9cffaf24adf678ae6d76c1b3389e9f85e474f6"
+        "revision": "867066a0a5c8b09bd2a3f8b9c9b514ebc335f3f4"
       },
       "beeftornado/rmtree": {
         "revision": "5eed35274437b8c52be1e627d97ad7d46965f164"
       },
       "homebrew/cask-fonts": {
-        "revision": "3d38a77692471d259b4cf78e763bdf604561f6c8"
+        "revision": "2b6ceac88115ecad86d8d91dd56c89ed92cfe0d9"
       },
       "homebrew/cask-versions": {
-        "revision": "bde26dd00d02a4d0d4e61e1d655d143ac3d7e199"
+        "revision": "2759ededb09656499989efc6c9391b3def2f91c1"
       }
     },
     "brew": {
       "htop": {
-        "version": "2.2.0_1",
+        "version": "3.0.1",
         "bottle": {
           "cellar": ":any",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/htop-2.2.0_1.catalina.bottle.tar.gz",
-              "sha256": "c06ff60960f64f5c8395f53d7419cbcce2a22ee87f0cb0138352c8a88111d21c"
+              "url": "https://homebrew.bintray.com/bottles/htop-3.0.1.catalina.bottle.tar.gz",
+              "sha256": "82587d9e03beca35d06e7e82225c021d4af07ecfe9d901d867cfeebec8edbb6d"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/htop-2.2.0_1.mojave.bottle.tar.gz",
-              "sha256": "77aa302765353b4085dcad52356d3264183e06310dda8d5bac64642299ea2902"
+              "url": "https://homebrew.bintray.com/bottles/htop-3.0.1.mojave.bottle.tar.gz",
+              "sha256": "c9ce09b9aee0b84c5837122ad84482536383752332366495b9021510c2b94474"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/htop-2.2.0_1.high_sierra.bottle.tar.gz",
-              "sha256": "0ebfb655b91566ba31f8effc94d642a43305ff95bdc9b30b46fadc132e2ced0c"
-            },
-            "sierra": {
-              "url": "https://homebrew.bintray.com/bottles/htop-2.2.0_1.sierra.bottle.tar.gz",
-              "sha256": "ed93b86f011de155c5d261b8c9cc9cb81fd0017667bf3ebe26ee090716bcd650"
+              "url": "https://homebrew.bintray.com/bottles/htop-3.0.1.high_sierra.bottle.tar.gz",
+              "sha256": "0d2fe8465f89d94a1e95a7b625387f4830e1d4c90c2bb3f8f58818a413c251e6"
             }
           }
         }
@@ -209,7 +205,7 @@
         }
       },
       "keepassxc": {
-        "version": "2.6.0",
+        "version": "2.6.1",
         "options": {
           "full_name": "keepassxc"
         }
@@ -221,7 +217,7 @@
         }
       },
       "virtualbox": {
-        "version": "6.1.12,139181",
+        "version": "6.1.14,140239",
         "options": {
           "full_name": "virtualbox"
         }
@@ -257,13 +253,13 @@
         }
       },
       "virtualbox-extension-pack": {
-        "version": "6.1.12",
+        "version": "6.1.14",
         "options": {
           "full_name": "virtualbox-extension-pack"
         }
       },
       "aws-vault": {
-        "version": "5.4.4",
+        "version": "6.1.0",
         "options": {
           "full_name": "aws-vault"
         }
@@ -279,12 +275,12 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.4.11",
+        "HOMEBREW_VERSION": "2.5.1",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "5f9cffaf24adf678ae6d76c1b3389e9f85e474f6",
+        "Homebrew/homebrew-core": "867066a0a5c8b09bd2a3f8b9c9b514ebc335f3f4",
         "CLT": "11.0.33.16",
         "Xcode": "11.5",
-        "macOS": "10.15.5"
+        "macOS": "10.15.6"
       }
     }
   }
