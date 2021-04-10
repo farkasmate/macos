@@ -311,6 +311,12 @@
         "options": {
           "full_name": "sweet-home3d"
         }
+      },
+      "gimp": {
+        "version": "2.10.22",
+        "options": {
+          "full_name": "gimp"
+        }
       }
     }
   },
