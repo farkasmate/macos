@@ -480,6 +480,12 @@
         "options": {
           "full_name": "virtualbox-extension-pack"
         }
+      },
+      "openra": {
+        "version": "20210321",
+        "options": {
+          "full_name": "openra"
+        }
       }
     }
   },
