@@ -1,0 +1,3 @@
+*.auto.pkrvars.hcl
+*.log
+output/
