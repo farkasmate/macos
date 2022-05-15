@@ -365,6 +365,10 @@
             }
           }
         }
+      },
+      "hashicorp/tap/packer": {
+        "version": "1.8.0",
+        "bottle": false
       }
     },
     "cask": {
