@@ -20,7 +20,7 @@ source "virtualbox-iso" "ubuntu" {
     "boot <enter>",
   ]
 
-  ssh_username           = var.username
+  ssh_username           = local.username
   ssh_timeout            = "30m"
   ssh_handshake_attempts = 1000
   ssh_agent_auth         = true

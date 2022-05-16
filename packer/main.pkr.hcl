@@ -7,13 +7,18 @@ build {
   ]
 
   provisioner "shell" {
+    inline = ["sudo apt-get install -y ${join(" ", local.packages)}"]
+  }
+
+  provisioner "shell" {
     scripts = [
-      "./scripts/install_packages.sh",
+      "./scripts/configure_dotfiles.sh",
+      "./scripts/install_docker.sh",
     ]
   }
 
   provisioner "file" {
     content     = "lorem ipsum\ndolor\nsit amet"
-    destination = "/home/${var.username}/TEST"
+    destination = "/home/${local.username}/TEST"
   }
 }
