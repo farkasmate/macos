@@ -1,3 +1,3 @@
 #!/bin/bash
 
-apt-get install -y i3-wm
+sudo apt-get install -y i3-wm

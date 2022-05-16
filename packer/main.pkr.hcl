@@ -7,7 +7,6 @@ build {
   ]
 
   provisioner "shell" {
-    execute_command = "echo '${var.password}' | sudo -S bash -c '{{ .Vars }} {{ .Path }}'"
     scripts = [
       "./scripts/install_packages.sh",
     ]
