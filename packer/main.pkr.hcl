@@ -11,6 +11,7 @@ build {
       "./scripts/add_apt_repos.sh",
       "./scripts/apt_upgrade.sh",
       "./scripts/configure_dotfiles.sh",
+      "./scripts/set_issue.sh",
     ]
   }
 

@@ -28,6 +28,7 @@ locals {
     "keybase",
     "rvm",
     "surf",
+    "virtualbox-guest-x11",
     "xsel",
     "zathura",
   ]
