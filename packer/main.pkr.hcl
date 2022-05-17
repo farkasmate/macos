@@ -7,13 +7,16 @@ build {
   ]
 
   provisioner "shell" {
-    inline = ["sudo apt-get install -y ${join(" ", local.packages)}"]
+    scripts = [
+      "./scripts/add_apt_repos.sh",
+      "./scripts/apt_upgrade.sh",
+      "./scripts/configure_dotfiles.sh",
+    ]
   }
 
   provisioner "shell" {
-    scripts = [
-      "./scripts/configure_dotfiles.sh",
-      "./scripts/install_docker.sh",
+    inline = [
+      "sudo apt-get install --assume-yes ${join(" ", local.packages)}",
     ]
   }
 

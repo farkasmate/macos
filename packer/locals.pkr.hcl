@@ -17,7 +17,14 @@ locals {
     "tig",
     "wpasupplicant",
   ]
+  _docker_packages = [
+    "containerd.io",
+    "docker-ce",
+    "docker-ce-cli",
+    "docker-compose-plugin",
+  ]
   _misc_packages = [
+    "keybase",
     "surf",
     "xsel",
     "zathura",
@@ -42,10 +49,12 @@ locals {
 
   packages = sort(distinct(concat(
     local._base_packages,
+    local._docker_packages,
     local._misc_packages,
     local._x_packages,
     local._yubikey_packages,
   )))
 
+  # NOTE: Hard coded in `cloud-init/user-data`
   username = "matefarkas"
 }

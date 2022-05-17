@@ -37,9 +37,13 @@ autoinstall:
   late-commands:
     - echo 'PubkeyAcceptedKeyTypes=+ssh-rsa' >> /target/etc/ssh/sshd_config.d/ssh-rsa.conf
   user-data:
+    groups:
+      - docker
+      - rvm
+      - vboxsf
     users:
       - name: matefarkas
-        groups: adm, cdrom, dip, lxd, plugdev, sudo
+        groups: adm, cdrom, dip, docker, lxd, plugdev, rvm, sudo, vboxsf
         primary_group: matefarkas
         shell: /bin/bash
         ssh_import_id:
