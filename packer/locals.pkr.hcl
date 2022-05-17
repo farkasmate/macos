@@ -24,7 +24,9 @@ locals {
     "docker-compose-plugin",
   ]
   _misc_packages = [
+    "google-chrome-stable",
     "keybase",
+    "rvm",
     "surf",
     "xsel",
     "zathura",
