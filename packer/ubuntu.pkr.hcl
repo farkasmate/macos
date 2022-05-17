@@ -1,11 +1,23 @@
 # vim: set filetype=hcl
+data "git-commit" "head" {}
+
 source "virtualbox-iso" "ubuntu" {
-  guest_os_type    = "Ubuntu_64"
-  iso_url          = "https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso"
-  iso_checksum     = "sha256:84aeaf7823c8c61baa0ae862d0a06b03409394800000b3235854a6b38eb4856f"
-  vm_name          = "ubuntu-2204"
+  guest_os_type = "Ubuntu_64"
+  iso_url       = "https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso"
+  iso_checksum  = "sha256:84aeaf7823c8c61baa0ae862d0a06b03409394800000b3235854a6b38eb4856f"
+  vm_name       = "ubuntu-2204"
+
   format           = "ova"
   output_directory = "./output/"
+  export_opts = [
+    "--manifest",
+    "--options", "nomacs",
+    "--vsys", "0",
+    "--vmname", local.hostname,
+    "--product", "Ubuntu 22.04",
+    "--producturl", "FIXME",
+    "--version", data.git-commit.head.hash,
+  ]
 
   headless         = true
   shutdown_command = "sudo shutdown -P now"
@@ -32,4 +44,37 @@ source "virtualbox-iso" "ubuntu" {
   disk_size            = "102400"
   hard_drive_interface = "sata"
   memory               = 4096
+
+  vboxmanage = [
+    [
+      "modifyvm", "{{.Name}}",
+      "--boot1", "dvd",
+      "--boot2", "disk",
+      "--clipboard-mode", "bidirectional",
+      "--draganddrop", "bidirectional",
+      "--hostonlyadapter2", "vboxnet0",
+      "--mouse", "usbtablet",
+      "--nic2", "hostonly",
+      "--pae", "off",
+      "--rtcuseutc", "on",
+      "--usbxhci", "on",
+      "--vrde", "off",
+    ],
+    [
+      "sharedfolder", "add", "{{.Name}}",
+      "--name", "shared",
+      "--hostpath", "/Users/${local.username}/${local.hostname}/",
+      "--automount",
+    ],
+    [
+      "usbfilter", "add", "0", "--target", "{{.Name}}",
+      "--name", "YubiKey 5C",
+      "--active", "yes",
+      "--vendorid", "1050",
+      "--productid", "0407",
+      "--revision", "0512",
+      "--manufacturer", "Yubico",
+      "--remote", "no",
+    ],
+  ]
 }

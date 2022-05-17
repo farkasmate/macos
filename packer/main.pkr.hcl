@@ -1,6 +1,6 @@
 # vim: set filetype=hcl
 build {
-  name = "hatak"
+  name = local.hostname
 
   sources = [
     "sources.virtualbox-iso.ubuntu",
@@ -16,12 +16,12 @@ build {
 
   provisioner "shell" {
     inline = [
+      # Install packages
       "sudo apt-get install --assume-yes ${join(" ", local.packages)}",
-    ]
-  }
 
-  provisioner "file" {
-    content     = "lorem ipsum\ndolor\nsit amet"
-    destination = "/home/${local.username}/TEST"
+      # Set hostname
+      "echo ${local.hostname} | sudo tee /etc/hostname",
+      "sudo hostname -F /etc/hostname",
+    ]
   }
 }

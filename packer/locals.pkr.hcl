@@ -57,6 +57,8 @@ locals {
     local._yubikey_packages,
   )))
 
+  hostname = "hatak"
+
   # NOTE: Hard coded in `cloud-init/user-data`
   username = "matefarkas"
 }
