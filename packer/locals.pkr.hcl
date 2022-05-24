@@ -23,6 +23,11 @@ locals {
     "docker-ce-cli",
     "docker-compose-plugin",
   ]
+  _dev_packages = [
+    "build-essential",
+    "libbz2-dev",
+    "libssl-dev",
+  ]
   _misc_packages = [
     "google-chrome-stable",
     "keybase",
@@ -52,6 +57,7 @@ locals {
 
   packages = sort(distinct(concat(
     local._base_packages,
+    local._dev_packages,
     local._docker_packages,
     local._misc_packages,
     local._x_packages,
