@@ -31,6 +31,7 @@ locals {
   _misc_packages = [
     "google-chrome-stable",
     "keybase",
+    "pass",
     "rvm",
     "surf",
     "virtualbox-guest-x11",
