@@ -10,7 +10,7 @@ source "virtualbox-iso" "ubuntu" {
   output_directory = "./output/"
   output_filename  = local.hostname
   export_opts = [
-    "--options", "manifest,nomacs",
+    "--options", "nomacs",
     "--vsys", "0",
     "--vmname", local.hostname,
     "--product", "Ubuntu 22.04",

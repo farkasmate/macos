@@ -21,8 +21,14 @@ build {
       "sudo apt-get install --assume-yes ${join(" ", local.packages)}",
 
       # Set hostname
-      "echo ${local.hostname} | sudo tee /etc/hostname",
+      "echo '${local.hostname}' | sudo tee /etc/hostname",
       "sudo hostname -F /etc/hostname",
+    ]
+  }
+
+  provisioner "shell" {
+    scripts = [
+      "./scripts/install_non_deb_packages.sh",
     ]
   }
 }
