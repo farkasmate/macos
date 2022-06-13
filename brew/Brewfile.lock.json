@@ -473,6 +473,12 @@
         "options": {
           "full_name": "openra"
         }
+      },
+      "prusaslicer": {
+        "version": "2.4.2,202204251114",
+        "options": {
+          "full_name": "prusaslicer"
+        }
       }
     }
   },
