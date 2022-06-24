@@ -5,22 +5,22 @@
         "revision": "e755439c5cf529ba1dfb93bfd2d2440ed0adbe91"
       },
       "homebrew/bundle": {
-        "revision": "f93f4a78aa22081ecd313333f35f211cc782ec9b"
+        "revision": "c5686db55e69b4ac128a28bbcd8a571c4ac76112"
       },
       "homebrew/cask": {
-        "revision": "258c5b38f54fb67ab7e0accafd4ead2adeae2aab"
+        "revision": "f435020e0b7fd586742b71efe7ee6e5abcb53c21"
       },
       "homebrew/cask-fonts": {
-        "revision": "cb6495716b70b0f89b730121c98491f02352266e"
+        "revision": "fae3349866c8bb9a5474d322a2c843dfec6d4aee"
       },
       "homebrew/cask-versions": {
-        "revision": "6741d7188121e8480d5a694c21fa89e297d1164c"
+        "revision": "2d839342669d3ae2871ad1d2e88a8edfeda9efc1"
       },
       "homebrew/core": {
-        "revision": "3d89f1788af8ebc9da3f3087b293a999642e72c5"
+        "revision": "606e3662511b3f364ce47ba0bf3dc34220662366"
       },
       "hashicorp/tap": {
-        "revision": "43af729372038307918e0e3d8325e9bc70f0f107"
+        "revision": "19fbf64a01f4744408fccd93dbec1eb2062a370a"
       }
     },
     "brew": {
@@ -367,8 +367,10 @@
         }
       },
       "hashicorp/tap/packer": {
-        "version": "1.8.1",
+        "version": "1.8.2",
         "bottle": false
+      },
+      "utm": {
       }
     },
     "cask": {
@@ -385,19 +387,19 @@
         }
       },
       "docker": {
-        "version": "4.9.0,80466",
+        "version": "4.9.1,81317",
         "options": {
           "full_name": "docker"
         }
       },
       "gimp": {
-        "version": "2.10.30",
+        "version": "2.10.32",
         "options": {
           "full_name": "gimp"
         }
       },
       "google-chrome": {
-        "version": "102.0.5005.115",
+        "version": "103.0.5060.53",
         "options": {
           "full_name": "google-chrome"
         }
@@ -493,9 +495,9 @@
         "macOS": "11.6"
       },
       "monterey": {
-        "HOMEBREW_VERSION": "3.5.1",
+        "HOMEBREW_VERSION": "3.5.2",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "3d89f1788af8ebc9da3f3087b293a999642e72c5",
+        "Homebrew/homebrew-core": "606e3662511b3f364ce47ba0bf3dc34220662366",
         "CLT": "13.3.1.0.1.1648687083",
         "Xcode": "13.4",
         "macOS": "12.3.1"
