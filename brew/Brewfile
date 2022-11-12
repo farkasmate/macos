@@ -24,6 +24,7 @@ cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "vlc"
 cask "xquartz"
+mas "Xcode", id: 497799835
 tap "beeftornado/rmtree"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
