@@ -1,3 +1,5 @@
+#cask "virtualbox-extension-pack" # NOTE: Seems to be not needed anymore
+#mas "Xcode", id: 497799835 # NOTE: Do not install Xcode using brew
 brew "awscli"
 brew "bash-completion"
 brew "git"
@@ -21,10 +23,8 @@ cask "prusaslicer"
 cask "steam"
 cask "sweet-home3d"
 cask "virtualbox"
-cask "virtualbox-extension-pack"
 cask "vlc"
 cask "xquartz"
-mas "Xcode", id: 497799835
 tap "beeftornado/rmtree"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
