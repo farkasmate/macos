@@ -6,6 +6,10 @@ packer {
       version = "~> 0.3"
       source  = "github.com/ethanmdavidson/git"
     }
+    parallels = {
+      version = "~> 1.0"
+      source  = "github.com/hashicorp/parallels"
+    }
     virtualbox = {
       version = "~> 1.0"
       source  = "github.com/hashicorp/virtualbox"

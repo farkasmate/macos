@@ -1,16 +1,14 @@
 #!/bin/bash
 
+ARCH=$(dpkg --print-architecture)
+
 # docker
 curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker.gpg
-echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list
+echo "deb [arch=${ARCH}] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list
 
 # google-chrome
 curl -fsSL "https://dl-ssl.google.com/linux/linux_signing_key.pub" | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/google-chrome.gpg
-echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
-
-# indeed
-curl -fsSL "https://indeed.sch.bme.hu/apt/indeed.key" | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/indeed.gpg
-echo "deb https://indeed.sch.bme.hu/apt/ /" | sudo tee /etc/apt/sources.list.d/indeed.list
+echo "deb [arch=${ARCH}] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
 # keybase
 curl -fsSL "https://keybase.io/docs/server_security/code_signing_key.asc" | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/keybase.gpg

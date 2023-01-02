@@ -3,7 +3,8 @@ build {
   name = local.hostname
 
   sources = [
-    "sources.virtualbox-iso.ubuntu",
+    #"sources.virtualbox-iso.ubuntu",
+    "sources.parallels-iso.ubuntu",
   ]
 
   provisioner "shell" {

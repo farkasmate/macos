@@ -30,15 +30,17 @@ locals {
     "libssl-dev",
   ]
   _misc_packages = [
-    "google-chrome-stable",
-    "keybase",
     "pass",
     "pass-extension-otp",
     "rvm",
     "surf",
-    "virtualbox-guest-x11",
     "xsel",
     "zathura",
+  ]
+  _x86_only_packages = [
+    "google-chrome-stable",
+    "keybase",
+    "virtualbox-guest-x11",
   ]
   _x_packages = [
     "i3-wm",
@@ -63,6 +65,7 @@ locals {
     local._dev_packages,
     local._docker_packages,
     local._misc_packages,
+    #local._x86_only_packages,
     local._x_packages,
     local._yubikey_packages,
   )))
