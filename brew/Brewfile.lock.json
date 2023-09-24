@@ -598,6 +598,12 @@
         "options": {
           "full_name": "virtualbox"
         }
+      },
+      "google-earth-pro": {
+        "version": "7.3.6.9345",
+        "options": {
+          "full_name": "google-earth-pro"
+        }
       }
     }
   },
