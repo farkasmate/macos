@@ -719,6 +719,18 @@
         "options": {
           "full_name": "autodesk-fusion"
         }
+      },
+      "parallels": {
+        "version": "19.4.0-54962",
+        "options": {
+          "full_name": "parallels"
+        }
+      },
+      "parallels-virtualization-sdk": {
+        "version": "19.4.0-54962",
+        "options": {
+          "full_name": "parallels-virtualization-sdk"
+        }
       }
     }
   },
