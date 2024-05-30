@@ -21,6 +21,9 @@
       },
       "hashicorp/tap": {
         "revision": "5cedf32ade9fc7c82935eb9f580cbfb5fac53aa0"
+      },
+      "cirruslabs/cli": {
+        "revision": "a65a8a022eaf9d26fae6fd3261b337cd023fa691"
       }
     },
     "brew": {
@@ -573,6 +576,10 @@
             }
           }
         }
+      },
+      "cirruslabs/cli/tart": {
+        "version": "2.11.0",
+        "bottle": false
       }
     },
     "cask": {
