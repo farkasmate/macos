@@ -11,5 +11,5 @@ packer init .
 NOTE: https://github.com/hashicorp/packer-plugin-parallels/issues/36#issuecomment-1279810302
 
 ```shell
-PYTHONPATH=/Library/Frameworks/ParallelsVirtualizationSDK.framework/Versions/10/Libraries/Python/3.7 packer build .
+PYTHONPATH=/Library/Frameworks/ParallelsVirtualizationSDK.framework/Versions/11/Libraries/Python/3.7 packer build .
 ```
