@@ -10,9 +10,5 @@ packer {
       version = "~> 1.0"
       source  = "github.com/hashicorp/parallels"
     }
-    virtualbox = {
-      version = "~> 1.0"
-      source  = "github.com/hashicorp/virtualbox"
-    }
   }
 }

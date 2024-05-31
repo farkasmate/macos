@@ -15,11 +15,9 @@ autoinstall:
   user-data:
     groups:
       - docker
-      - rvm
-      - vboxsf
     users:
       - name: matefarkas
-        groups: adm, cdrom, dip, docker, lxd, plugdev, rvm, sudo, vboxsf
+        groups: adm, cdrom, dip, docker, lxd, plugdev, sudo
         primary_group: matefarkas
         shell: /bin/bash
         ssh_import_id:

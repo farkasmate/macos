@@ -3,7 +3,6 @@ build {
   name = local.hostname
 
   sources = [
-    #"sources.virtualbox-iso.ubuntu",
     "sources.parallels-iso.ubuntu",
   ]
 
@@ -24,12 +23,6 @@ build {
       # Set hostname
       "echo '${local.hostname}' | sudo tee /etc/hostname",
       "sudo hostname -F /etc/hostname",
-    ]
-  }
-
-  provisioner "shell" {
-    scripts = [
-      "./scripts/install_non_deb_packages.sh",
     ]
   }
 }
