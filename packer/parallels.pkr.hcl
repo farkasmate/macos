@@ -1,8 +1,8 @@
 # vim: set filetype=hcl
 source "parallels-iso" "ubuntu" {
   guest_os_type = "ubuntu"
-  iso_url       = "http://cdimage.ubuntu.com/releases/22.04/release/ubuntu-22.04.1-live-server-arm64.iso"
-  iso_checksum  = "sha256:bc5a8015651c6f8699ab262d333375d3930b824f03d14ae51e551d89d9bb571c"
+  iso_url       = "https://releases.ubuntu.com/24.04/ubuntu-24.04-live-server-amd64.iso"
+  iso_checksum  = "sha256:8762f7e74e4d64d72fceb5f70682e6b069932deedb4949c6975d0f0fe0a91be3"
 
   vm_name          = local.hostname
   output_directory = "./output/"
@@ -25,7 +25,7 @@ source "parallels-iso" "ubuntu" {
   ssh_agent_auth         = true
 
   cpus                 = 2
-  disk_size            = "102400"
+  disk_size            = "51200"
   disk_type            = "plain"
   skip_compaction      = true
   hard_drive_interface = "sata"

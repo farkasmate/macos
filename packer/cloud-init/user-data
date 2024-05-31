@@ -5,41 +5,8 @@ autoinstall:
   keyboard:
     layout: us
   storage:
-    swap:
-      size: 4GB
-    config:
-    - id: disk-sda
-      type: disk
-      ptable: gpt
-      grub_device: false
-    - id: partition-efi
-      type: partition
-      device: disk-sda
-      number: 1
-      size: 1G
-      flag: boot
-      grub_device: true
-    - id: partition-root
-      type: partition
-      device: disk-sda
-      number: 2
-      size: -1
-    - id: format-efi
-      type: format
-      volume: partition-efi
-      fstype: fat32
-    - id: format-root
-      type: format
-      volume: partition-root
-      fstype: ext4
-    - id: mount-root
-      type: mount
-      device: format-root
-      path: /
-    - id: mount-efi
-      type: mount
-      device: format-efi
-      path: /boot/efi
+    layout:
+      name: direct
   ssh:
     allow-pw: false
     install-server: true

@@ -1,8 +1,8 @@
 # vim: set filetype=hcl
 source "parallels-iso" "alpine" {
   guest_os_type = "linux"
-  iso_url       = "https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/aarch64/alpine-standard-3.18.3-aarch64.iso"
-  iso_checksum  = "sha256:ac13d0264f50b95765b7c09a457464199b71440085cea0911417b97c39836636"
+  iso_url       = "https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-standard-3.20.0-x86_64.iso"
+  iso_checksum  = "sha256:b29000da345d73a6a6de5b8053e09255ac22dbb4cfac9cbc5ddf1bbb45871d65"
 
   vm_name          = local.hostname
   output_directory = "./output/"
@@ -11,6 +11,7 @@ source "parallels-iso" "alpine" {
   shutdown_command     = "poweroff"
 
   http_directory = "./config/"
+  boot_wait = "30s"
   boot_command = [
     "root<enter>",
     "setup-alpine -q<enter><enter>",
@@ -31,7 +32,7 @@ source "parallels-iso" "alpine" {
   ssh_agent_auth         = true
 
   cpus                 = 2
-  disk_size            = "102400"
+  disk_size            = "51200"
   disk_type            = "plain"
   skip_compaction      = true
   hard_drive_interface = "sata"
