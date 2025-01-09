@@ -1,0 +1,51 @@
+#cloud-config
+
+package_update: true
+
+packages:
+  # base
+  - bash-completion
+  - bind-tools
+  - ethtool
+  - file
+  - git
+  - gpg-agent
+  - grep
+  - htop
+  - inetutils-telnet
+  - iputils-ping
+  - libqrencode-tools
+  - openssh-client
+  - pass
+  - pass-otp
+  - pwgen
+  - tcpdump
+  - tig
+  - vim
+  - zip
+
+  # man
+  - ethtool-doc
+  - man-db
+  - tcpdump-doc
+
+  # dev
+  - alpine-sdk
+  # crystal
+  - gc-dev
+  - libevent-static
+  - libxml2-dev
+  - pcre2-dev
+  - yaml-dev
+  # python
+  - bzip2-dev
+  - libffi-dev
+  - openssl-dev
+  - readline-dev
+
+users:
+  - name: matefarkas
+    homedir: /Users/matefarkas
+    shell: /bin/bash
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    uid: 501
