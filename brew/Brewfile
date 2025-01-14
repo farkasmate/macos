@@ -1,3 +1,4 @@
+#cask "docker" # NOTE: Alternatively "podman" and "docker-compose" brew
 #mas "Xcode", id: 497799835 # NOTE: Do not install Xcode using brew
 brew "bash"
 brew "bash-completion@2"
@@ -18,7 +19,6 @@ brew "wget"
 cask "android-studio"
 cask "autodesk-fusion"
 cask "balenaetcher"
-cask "docker" # NOTE: Alternatively "podman" and "docker-compose" brew
 cask "firefox"
 cask "fontforge"
 cask "ghostty"
@@ -28,7 +28,7 @@ cask "iterm2"
 cask "minecraft"
 cask "openra"
 cask "openscad"
-cask "orbstack"
+cask "orbstack" # NOTE: Provides `docker`
 cask "prusaslicer"
 cask "steam"
 cask "sweet-home3d"
