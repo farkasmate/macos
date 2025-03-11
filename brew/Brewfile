@@ -27,7 +27,7 @@ cask "google-chrome"
 cask "iterm2"
 cask "minecraft"
 cask "openra"
-cask "openscad"
+cask "openscad@snapshot"
 cask "orbstack" # NOTE: Provides `docker`
 cask "prusaslicer"
 cask "steam"
