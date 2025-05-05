@@ -34,6 +34,4 @@ cask "orbstack" # NOTE: Provides `docker`
 cask "prusaslicer"
 cask "vlc"
 tap "beeftornado/rmtree"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "jorgelbg/tap"
