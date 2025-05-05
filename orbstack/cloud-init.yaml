@@ -38,10 +38,16 @@ packages:
   - pcre2-dev
   - yaml-dev
   # python
+  - bash
+  - build-base
   - bzip2-dev
   - libffi-dev
   - openssl-dev
   - readline-dev
+  - sqlite-dev
+  - tk-dev
+  - xz-dev
+  - zlib-dev
 
 users:
   - name: matefarkas
